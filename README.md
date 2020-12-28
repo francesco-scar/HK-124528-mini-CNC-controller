@@ -10,4 +10,29 @@ Everything wrote here come just from my experience, so it could be wrong, please
 
 The HK-124528 is a board that takes as input from the parallel port connector the signals of steps and direction for each of the 3 stepper motors. At each pulse of the step data line the board send the current to the relative motor in order to make it step once in the direction specified by the direction data line (eg. 0V --> Clockwise; 5V --> Counterclockwise, but it depends by the motor's coils connections)
 
+## Parallel port connections
+
+According to the standard parallel port pin numeration (wikipedia image below) I found out the following connections:
+![Parallel port pin](https://en.wikipedia.org/wiki/Parallel_port#/media/File:25_Pin_D-sub_pinout.svg)
+
+| Pin | Circuit path | Function | Additional connections on board |
+|:---:|:------------:|:--------:|:-------------------------------:|
+|1|Not tested|||
+|2|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|X Step|Not Tested|
+|3|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|X Dir|Not Tested|
+|4|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Y Step|CN8 CLK+|
+|5|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Y Dir|CN8 CLK+|
+|6|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Z Step|CN8 CLK+|
+|7|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Z Dir|CN8 CLK+|
+|8|Not tested|||
+|9|Not tested|||
+|10|Not tested|||
+|11|Not tested|||
+|12|Not tested|||
+|13|Not tested|||
+|14|Buffer (74125) control pin|Power and enable stepper|Not Tested|
+|15|Not tested|||
+|16|Not tested|||
+|17|Not tested|||
+
 This is still a work in progress...
