@@ -12,8 +12,10 @@ The HK-124528 is a board that takes as input from the parallel port connector th
 
 ## Parallel port connections
 
-According to the standard parallel port pin numeration (wikipedia image below) I found out the following connections:
-![Parallel port pin](https://en.wikipedia.org/wiki/Parallel_port#/media/File:25_Pin_D-sub_pinout.svg)
+From here on I will number parallel port pins accordingly to the standard parallel port pin numeration (as shown in this Wikipedia image, By AndrewBuck - Own work, CC BY-SA 3.0 [click here for more information](https://commons.wikimedia.org/w/index.php?curid=2565019))
+![Parallel port pin](https://github.com/francesco-scar/HK-124528-mini-CNC-controller/blob/main/images/800px-25_Pin_D-sub_pinout.svg)
+
+I found out the following connections:
 
 | Pin | Circuit path | Function | Additional connections on board |
 |:---:|:------------:|:--------:|:-------------------------------:|
