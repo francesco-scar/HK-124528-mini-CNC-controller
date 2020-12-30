@@ -9,7 +9,7 @@ Everything wrote here come just from my experience, so it could be wrong, please
 ## Introduction
 
 The HK-124528 is a board that takes as input from the parallel port connector the signals of steps and direction for each of the 3 stepper motors. At each pulse of the step data line the board send the current to the relative motor in order to make it step once in the direction specified by the direction data line (eg. 0V --> Clockwise; 5V --> Counterclockwise, but it depends by the motor's coils connections).
-I used the (grbl)[https://github.com/grbl/grbl] firmware (Version 1.1, but other versions should work as well) on an Arduino Uno board to control the driver.
+I used the [grbl](https://github.com/grbl/grbl) firmware (Version 1.1, but other versions should work as well) on an Arduino Uno board to control the driver.
 
 ## Parallel port connections
 
