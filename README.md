@@ -20,12 +20,12 @@ I found out the following connections:
 | Pin | Circuit path | Function | Additional connections on board |
 |:---:|:------------:|:--------:|:-------------------------------:|
 |1|Not tested|||
-|2|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|X Step|Not Tested|
-|3|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|X Dir|Not Tested|
+|2|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|X Step|CN7 CLK+|
+|3|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|X Dir|CN7 CW+|
 |4|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Y Step|CN8 CLK+|
-|5|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Y Dir|CN8 CLK+|
-|6|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Z Step|CN8 CLK+|
-|7|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Z Dir|CN8 CLK+|
+|5|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Y Dir|CN8 CW+|
+|6|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Z Step|CN10 CLK+|
+|7|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Z Dir|CN10 CW+|
 |8|Not tested|||
 |9|Not tested|||
 |10|Not tested|||
