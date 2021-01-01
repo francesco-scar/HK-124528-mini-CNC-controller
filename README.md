@@ -29,7 +29,7 @@ I found out the following connections:
 |7|Schmitt-Trigger Inverts(7414) -> Controlled Buffer (74125) -> Optocoupler|Z Dir|CN10 CW+|
 |8|Not tested|||
 |9|Not tested|||
-|10|Not tested|||
+|10|Avalable|In my case used for emergency button|P10 on CN13|
 |11|Not tested|||
 |12|Not tested|||
 |13|Not tested|||
