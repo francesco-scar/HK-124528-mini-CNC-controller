@@ -38,4 +38,33 @@ I found out the following connections:
 |16|Not tested|||
 |17|Not tested|||
 
+## Arduino Uno Connections
+
+I connected the pins above to the Arduino Uno accordingly to their function; in the [grbl source](https://github.com/grbl/grbl/blob/master/grbl/cpu_map/cpu_map_atmega328p.h) code there are those definitions for pins:
+
+```
+// Define step pulse output pins. NOTE: All step bit pins must be on the same port.
+#define STEP_DDR        DDRD
+#define STEP_PORT       PORTD
+#define X_STEP_BIT      2  // Uno Digital Pin 2
+#define Y_STEP_BIT      3  // Uno Digital Pin 3
+#define Z_STEP_BIT      4  // Uno Digital Pin 4
+#define STEP_MASK       ((1<<X_STEP_BIT)|(1<<Y_STEP_BIT)|(1<<Z_STEP_BIT)) // All step bits
+
+// Define step direction output pins. NOTE: All direction pins must be on the same port.
+#define DIRECTION_DDR     DDRD
+#define DIRECTION_PORT    PORTD
+#define X_DIRECTION_BIT   5  // Uno Digital Pin 5
+#define Y_DIRECTION_BIT   6  // Uno Digital Pin 6
+#define Z_DIRECTION_BIT   7  // Uno Digital Pin 7
+#define DIRECTION_MASK    ((1<<X_DIRECTION_BIT)|(1<<Y_DIRECTION_BIT)|(1<<Z_DIRECTION_BIT)) // All direction bits
+
+// Define stepper driver enable/disable output pin.
+#define STEPPERS_DISABLE_DDR    DDRB
+#define STEPPERS_DISABLE_PORT   PORTB
+#define STEPPERS_DISABLE_BIT    0  // Uno Digital Pin 8
+```
+
+You can change them if you want, but you have to pay attention (as said in the comments) that `All step/direction bit pins must be on the same port`.
+
 This is still a work in progress...
