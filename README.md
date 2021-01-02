@@ -67,4 +67,30 @@ I connected the pins above to the Arduino Uno accordingly to their function; in 
 
 You can change them if you want, but you have to pay attention (as said in the comments) that `All step/direction bit pins must be on the same port`.
 
+I made this connections:
+
+| Parallel Pin | Function | Arduino Pin |
+|:------------:|:--------:|:-----------:|
+|1|-|-|
+|2|X Step|2|
+|3|X Dir|5|
+|4|Y Step|3|
+|5|Y Dir|6|
+|6|Z Step|4|
+|7|Z Dir|7|
+|8|-|-|
+|9|-|-|
+|10|Emergency button|A0|
+|11|-|-|
+|12|-|-|
+|13|-|-|
+|14*|Power and enable stepper*|GND|
+|15|-|-|
+|16|-|-|
+|17|-|-|
+|-|Z Probe|A5|
+|GND|GND|GND|
+
+\* you can connect this pin to pin 8, so that the steppers are enabled only when they have to turn, but I prefered keep them always active to avoid unwanted movements (and position loss).
+
 This is still a work in progress...
