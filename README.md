@@ -91,6 +91,6 @@ I made this connections:
 |-|Z Probe|A5|
 |GND|GND|GND|
 
-\* you can connect this pin to pin 8, so that the steppers are enabled only when they have to turn, but I prefered keep them always active to avoid unwanted movements (and position loss).
+\* you can connect this pin to pin 8, so that the steppers are enabled only when they have to turn, but I prefered keep them always active to avoid unwanted movements (and position loss), this way it consume more current and motors and drivers can heat up a little more, but otherwise the motors don't oppose resistance to unwanted forces along the axis.
 
 This is still a work in progress...
