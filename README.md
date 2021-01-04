@@ -93,4 +93,12 @@ I made this connections:
 
 \* you can connect this pin to pin 8, so that the steppers are enabled only when they have to turn, but I prefered keep them always active to avoid unwanted movements (and position loss), this way it consume more current and motors and drivers can heat up a little more, but otherwise the motors don't oppose resistance to unwanted forces along the axis.
 
+## Flash firmware on Arduino Uno
+
+To flash the GRBL firmware you can just download it from [their repository](https://github.com/grbl/grbl) and open the /grbl/examples/grblUpload/grblUpload.ino file in the Arduino IDE and upload it on the board (as any other Arduino sketch).
+
+Note: I don't have any credits for the grbl firmware, I'm just a normal user, they did all the work :-)
+
+
+
 This is still a work in progress...
