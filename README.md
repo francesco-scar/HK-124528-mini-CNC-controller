@@ -72,26 +72,30 @@ I made this connections:
 | Parallel Pin | Function | Arduino Pin |
 |:------------:|:--------:|:-----------:|
 |1|-|-|
-|2|X Step|2|
+|CN7 CLK+ (2)\*|X Step|2|
 |3|X Dir|5|
-|4|Y Step|3|
+|CN8 CLK+ (4)\*|Y Step|3|
 |5|Y Dir|6|
-|6|Z Step|4|
+|CN10 CLK+ (6)\*|Z Step|4|
 |7|Z Dir|7|
 |8|-|-|
 |9|-|-|
-|10|Emergency button|A0|
+|10|Emergency button \*\*|A0|
 |11|-|-|
 |12|-|-|
 |13|-|-|
-|14*|Power and enable stepper*|GND|
+|14*|Power and enable stepper\*\*\*|GND|
 |15|-|-|
 |16|-|-|
 |17|-|-|
 |-|Z Probe|A5|
 |GND|GND|GND|
 
-\* you can connect this pin to pin 8, so that the steppers are enabled only when they have to turn, but I prefered keep them always active to avoid unwanted movements (and position loss), this way it consume more current and motors and drivers can heat up a little more, but otherwise the motors don't oppose resistance to unwanted forces along the axis.
+\* I connected those right before the optocoupler, after the controlled buffer output, because, for some reason, if I connect both step and dir signal to the parallel port the motors loose steps, otherwise with both after the buffer the motors turn only in one direction or not work at all (but could be a problem of the board I tested and both on parallel port could work for you, just try it if you want).
+
+\*\* **ATTENTION:** The emergency stop is handled in software, in my case, so test it consistently before regular use of the CNC, because the false safe-feeling of it can be really dangerous in an emergency situation. In addition to this, in my case, the spindle has a separate driver circuit and is manually controlled by a switch and a potentiometer, so the emergency button will **NOT** stop it and the spindle will continue to rotate, pay attention to that too.
+
+\*\*\* you can connect this pin to pin 8, so that the steppers are enabled only when they have to turn, but I prefered keep them always active to avoid unwanted movements (and position loss), this way it consume more current and motors and drivers can heat up a little more, but otherwise the motors don't oppose resistance to unwanted forces along the axis.
 
 ## Flash firmware on Arduino Uno
 
