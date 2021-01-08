@@ -101,8 +101,15 @@ I made this connections:
 
 To flash the GRBL firmware you can just download it from [their repository](https://github.com/grbl/grbl) and open the /grbl/examples/grblUpload/grblUpload.ino file in the Arduino IDE and upload it on the board (as any other Arduino sketch).
 
-Note: I don't have any credits for the grbl firmware, I'm just a normal user, they did all the work :-)
+Note: I don't have any credits for the grbl firmware, I'm just a normal user, they and their community did all the work :-)
 
+## Universal G-Code Sender (UGS)
+
+The easyest way, in my opinion, to send send the g-code instructions to your grbl controlled CNC is using the universal g-code sender and you can find information about installation and usage on the [UGS github repository](https://github.com/winder/Universal-G-Code-Sender).
+
+To test that everything works so far you can just connect your arduino to the PC using a USB cable, launch UGS and choose the right port from the drop-down menu. Select the right baud-rate (the default one is 115200) and click the connect icon. When the connection is established you can move the machine using the jog window.
+
+Note: Again, I don't have any credits for the UGS software, I'm just a normal user, they and their community did all the work :-)
 
 
 This is still a work in progress...
