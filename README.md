@@ -2,6 +2,15 @@
 
 I created this repository just to save somewhere some documentation about the HK-124528 CNC driver board, because at the time I'm writing this I wasn't able to find information about this specific board, so there is no code in this repo, but just text and images.
 
+## Table of contents
+
+- [Disclaimer](#Disclaimer)
+- [Introduction](#Introduction)
+- [Parallel port connections](#Parallel-port-connections)
+- [Arduino Uno Connections](#Arduino-Uno-Connections)
+- [Flash firmware on Arduino Uno](Flash-firmware-on-Arduino-Uno)
+- [Universal G-Code Sender (UGS)](#Universal-G-Code-Sender-(UGS))
+
 ## Disclaimer
 
 Everything wrote here come just from my experience, so it could be wrong, please double-check everything before try that out. Anyway, I'm not responsable for any damage. Thanks.
