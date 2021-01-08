@@ -8,8 +8,8 @@ I created this repository just to save somewhere some documentation about the HK
 - [Introduction](#Introduction)
 - [Parallel port connections](#Parallel-port-connections)
 - [Arduino Uno Connections](#Arduino-Uno-Connections)
-- [Flash firmware on Arduino Uno](Flash-firmware-on-Arduino-Uno)
-- [Universal G-Code Sender (UGS)](#Universal-G-Code-Sender-(UGS))
+- [Flash firmware on Arduino Uno](#Flash-firmware-on-Arduino-Uno)
+- [Universal G-Code Sender (UGS)](#Universal-G-Code-Sender-UGS)
 
 ## Disclaimer
 
