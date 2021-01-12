@@ -11,6 +11,7 @@ I created this repository just to save somewhere some documentation about the HK
 - [Flash firmware on Arduino Uno](#Flash-firmware-on-Arduino-Uno)
 - [Universal G-Code Sender (UGS)](#Universal-G-Code-Sender-UGS)
 - [Parameters configuration](#Parameters-configuration)
+- [Dip Switches](#Dip-Switches)
 
 ## Disclaimer
 
