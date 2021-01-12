@@ -167,4 +167,12 @@ $132 = 200.000    (z max travel, mm)
 In particular you can calculate the step/mm parameter moving the wanted axis of a length ```L```, measuring the actual distance travelled ```D``` and given the ```OLD``` value of this setting you can get the ```NEW``` one using the formula ```NEW = (L/D)*OLD```. Otherwise you can calculate this value from the screw pitch.
 
 
+
+## Dip Switches
+
+![Dip Switches status](https://github.com/francesco-scar/HK-124528-mini-CNC-controller/blob/main/images/20201230_113053_edit.jpg)
+
+The dip switches on the board allows you to set the current limit (SW1 and SW2), decade mode (SW3 and SW4) and microstepping (SW5 and SW6) for the stepper driver.
+After some tries and errors I think the best combination in my case was the one showed in the image above.
+
 This is still a work in progress...
