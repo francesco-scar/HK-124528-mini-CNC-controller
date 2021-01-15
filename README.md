@@ -12,6 +12,7 @@ I created this repository just to save somewhere some documentation about the HK
 - [Universal G-Code Sender (UGS)](#Universal-G-Code-Sender-UGS)
 - [Parameters configuration](#Parameters-configuration)
 - [Dip Switches](#Dip-Switches)
+- [Troubleshooting](#Troubleshooting)
 
 ## Disclaimer
 
@@ -176,4 +177,7 @@ In particular you can calculate the step/mm parameter moving the wanted axis of 
 The dip switches on the board allows you to set the current limit (SW1 and SW2), decade mode (SW3 and SW4) and microstepping (SW5 and SW6) for the stepper driver.
 After some tries and errors I think the best combination in my case was the one showed in the image above.
 
-This is still a work in progress...
+
+## Troubleshooting
+
+Sometimes it happen that the arduino stop responding or seem to reboot itself; I'm not sure why is this happening, but some resources online suggest to put a capacitor in parallel to the power source, update the firmware and the universal g-code sender and try to reduce electromagnetic interference, but I haven't tested those solutions enough time to give any meaningful results.
