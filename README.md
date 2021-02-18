@@ -178,6 +178,9 @@ The dip switches on the board allows you to set the current limit (SW1 and SW2),
 After some tries and errors I think the best combination in my case was the one showed in the image above.
 
 
+
 ## Troubleshooting
 
-Sometimes it happen that the arduino stop responding or seem to reboot itself; I'm not sure why is this happening, but some resources online suggest to put a capacitor in parallel to the power source, update the firmware and the universal g-code sender and try to reduce electromagnetic interference, but I haven't tested those solutions enough time to give any meaningful results.
+- Sometimes it happen that the arduino stop responding or seem to reboot itself; I'm not sure why is this happening, but some resources online suggest to put a capacitor in parallel to the power source, update the firmware and the universal g-code sender and try to reduce electromagnetic interference, but I haven't tested those solutions enough time to give any meaningful results.
+
+- Sometimes the CNC seems to skip some gcode line during  execution; this result in many broken bits when drilling holes, because if the raising motion is skipped the bit mode horizontally while is still in the material; I mitigated (and would say solved) this problem by repeating each line of the gcode file several times (5 for example) using the `Duplicate_line_gcode.py` python3 script that you can find in this repository.
